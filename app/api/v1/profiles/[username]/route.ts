@@ -58,7 +58,9 @@ export async function GET(
         .in("id", ids)
         .eq("is_published", true);
 
-      const roleBy = new Map(contribLinks.map((c) => [c.project_id, c.role]));
+      const roleBy = new Map(
+        (contribLinks ?? []).map((c) => [c.project_id, c.role])
+      );
       projects_contributed =
         cp?.map((p) => ({
           slug: p.slug,

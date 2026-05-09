@@ -179,7 +179,7 @@ export async function getPublicProfile(username: string) {
       .eq("is_published", true);
 
     const roleByProject = new Map(
-      contribLinks.map((c) => [c.project_id, c.role])
+      (contribLinks ?? []).map((c) => [c.project_id, c.role])
     );
     contributed =
       cp?.map((p) => ({

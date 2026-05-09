@@ -77,24 +77,40 @@ export type Database = {
           updated_at?: string;
         };
         Update: Partial<Profile>;
+        Relationships: [];
       };
       projects: {
         Row: ProjectRow;
         Insert: Omit<
           ProjectRow,
-          "id" | "created_at" | "updated_at"
+          | "id"
+          | "created_at"
+          | "updated_at"
+          | "open_issues_count"
+          | "primary_language"
+          | "is_official"
         > & {
           id?: string;
           created_at?: string;
           updated_at?: string;
+          open_issues_count?: number;
+          primary_language?: string | null;
+          is_official?: boolean;
         };
         Update: Partial<ProjectRow>;
+        Relationships: [];
       };
       project_contributors: {
         Row: ProjectContributorRow;
-        Insert: Omit<ProjectContributorRow, "id"> & { id?: string };
+        Insert: Omit<ProjectContributorRow, "id" | "email"> & {
+          id?: string;
+          email?: string | null;
+        };
         Update: Partial<ProjectContributorRow>;
+        Relationships: [];
       };
     };
+    Views: Record<string, never>;
+    Functions: Record<string, never>;
   };
 };
