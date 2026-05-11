@@ -28,7 +28,7 @@ export function UserMenu({ email, username }: Props) {
       {username ? (
         <Link
           href={`/u/${username}`}
-          className="hidden text-gray-600 transition-colors hover:text-indigo-600 dark:text-neutral-300 dark:hover:text-indigo-400 sm:inline-flex"
+          className="hidden text-gray-600 transition-colors hover:text-green-700 dark:text-neutral-300 dark:hover:text-green-400 sm:inline-flex"
           aria-label="Profile"
         >
           <User className="h-5 w-5" />

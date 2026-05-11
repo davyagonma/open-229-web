@@ -9,21 +9,21 @@ export function LandingFinalCta({ whatsappHref }: { whatsappHref: string | null 
       className="relative overflow-hidden bg-gray-900 py-24 dark:bg-black"
     >
       <div className="pointer-events-none absolute inset-0 opacity-25">
-        <div className="grid -translate-y-24 rotate-12 grid-cols-6 gap-4">
-          <div className="h-40 rounded-2xl bg-green-600" />
-          <div className="h-40 rounded-2xl bg-yellow-500" />
-          <div className="h-40 rounded-2xl bg-red-600" />
-          <div className="h-40 rounded-2xl bg-green-500" />
-          <div className="h-40 rounded-2xl bg-yellow-400" />
-          <div className="h-40 rounded-2xl bg-red-500" />
+        <div className="grid -translate-y-24 rotate-12 grid-cols-6 gap-3 sm:gap-4">
+          <div className="h-28 rounded-2xl bg-green-700 sm:h-40" />
+          <div className="h-28 rounded-2xl bg-yellow-500 sm:h-40" />
+          <div className="h-28 rounded-2xl bg-emerald-600 sm:h-40" />
+          <div className="h-28 rounded-2xl bg-green-600 sm:h-40" />
+          <div className="h-28 rounded-2xl bg-yellow-400 sm:h-40" />
+          <div className="h-28 rounded-2xl bg-teal-600 sm:h-40" />
         </div>
       </div>
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6">
         <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-green-300">
           <PartyPopper className="h-4 w-4" />
           Ambiance communauté
         </p>
-        <h2 className="font-display mb-6 text-4xl font-black text-white md:text-5xl">
+        <h2 className="font-display mb-6 text-balance text-3xl font-black text-white sm:text-4xl md:text-5xl">
           Envie de pitcher un projet, trouver un binôme ou débugger à plusieurs ?
         </h2>
         <p className="mx-auto mb-4 text-lg text-gray-300">
@@ -46,13 +46,13 @@ export function LandingFinalCta({ whatsappHref }: { whatsappHref: string | null 
           ) : null}
           <Link
             href="/join"
-            className="inline-flex items-center justify-center rounded-2xl border-2 border-white/30 bg-white/10 px-10 py-5 text-xl font-bold text-white backdrop-blur-sm transition-all hover:bg-white/20"
+            className="inline-flex min-h-[3rem] w-full items-center justify-center rounded-2xl border-2 border-white/30 bg-white/10 px-6 py-4 text-center text-lg font-bold text-white backdrop-blur-sm transition-all hover:bg-white/20 sm:w-auto sm:px-10 sm:py-5 sm:text-xl"
           >
             Créer mon compte open-229
           </Link>
           <Link
             href="/search"
-            className="inline-flex items-center justify-center rounded-2xl bg-yellow-400 px-10 py-5 text-xl font-bold text-gray-900 transition-all hover:bg-yellow-500"
+            className="inline-flex min-h-[3rem] w-full items-center justify-center rounded-2xl bg-yellow-400 px-6 py-4 text-center text-lg font-bold text-gray-900 transition-all hover:bg-yellow-500 sm:w-auto sm:px-10 sm:py-5 sm:text-xl"
           >
             Voir le catalogue
           </Link>

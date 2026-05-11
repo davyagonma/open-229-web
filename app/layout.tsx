@@ -37,7 +37,7 @@ export default function RootLayout({
         className={`${inter.variable} ${spaceGrotesk.variable} min-h-screen overflow-x-hidden antialiased`}
       >
         <ThemeProvider>
-          <div className="flex min-h-screen flex-col bg-[#F9FAFB] text-gray-900 transition-colors dark:bg-neutral-950 dark:text-neutral-100">
+          <div className="flex min-h-screen flex-col bg-background text-foreground transition-colors">
             {!isSupabaseConfigured() ? <SetupBanner /> : null}
             <SiteHeader />
             <main className="flex-grow">{children}</main>

@@ -36,10 +36,10 @@ export default async function HomePage() {
       <LandingHow />
       <ExploreSection />
 
-      <section className="px-6 py-20 dark:bg-neutral-950">
+      <section className="px-4 py-16 sm:px-6 sm:py-20 dark:bg-neutral-950">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 text-center">
-            <h2 className="font-display text-3xl font-black text-gray-900 dark:text-white md:text-4xl">
+            <h2 className="font-display text-balance text-2xl font-black text-gray-900 dark:text-white sm:text-3xl md:text-4xl">
               Projets à la une
             </h2>
             <p className="mt-2 text-gray-600 dark:text-neutral-400">
@@ -52,7 +52,7 @@ export default async function HomePage() {
                 Aucun projet pour l’instant. Créez un compte et{" "}
                 <Link
                   href="/add"
-                  className="font-semibold text-indigo-600 underline dark:text-indigo-400"
+                  className="font-semibold text-green-700 underline dark:text-green-400"
                 >
                   ajoutez le premier
                 </Link>{" "}
@@ -67,7 +67,7 @@ export default async function HomePage() {
           <div className="mt-16 text-center">
             <Link
               href="/search"
-              className="inline-flex items-center gap-2 rounded-2xl border-2 border-gray-900 px-10 py-4 text-lg font-bold text-gray-900 transition-all hover:bg-gray-900 hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-gray-900"
+              className="inline-flex min-h-[3rem] w-full items-center justify-center gap-2 rounded-2xl border-2 border-gray-900 px-6 py-3 text-center text-base font-bold text-gray-900 transition-all hover:bg-gray-900 hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-gray-900 sm:w-auto sm:px-10 sm:py-4 sm:text-lg"
             >
               Tout parcourir
               <ArrowRight className="h-5 w-5" />

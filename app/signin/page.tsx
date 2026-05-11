@@ -40,8 +40,8 @@ function SignInForm() {
   }
 
   return (
-    <div className="mx-auto max-w-md px-6 py-20">
-      <h1 className="font-display text-center text-4xl font-black text-gray-900">
+    <div className="mx-auto max-w-md px-4 py-16 sm:px-6 sm:py-20">
+      <h1 className="font-display text-center text-balance text-3xl font-black text-gray-900 dark:text-white sm:text-4xl">
         Connexion
       </h1>
       {message === "check_email" ? (
@@ -91,7 +91,7 @@ function SignInForm() {
       </form>
       <p className="mt-8 text-center text-sm">
         Pas encore de compte ?{" "}
-        <Link href="/join" className="font-semibold text-indigo-600">
+        <Link href="/join" className="font-semibold text-green-700 dark:text-green-400">
           S’inscrire
         </Link>
       </p>

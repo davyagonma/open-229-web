@@ -20,7 +20,7 @@ const ACCENT = [
   { border: "hover:border-sky-500 hover:shadow-sky-50", iconBg: "bg-sky-50", iconText: "text-sky-600", title: "group-hover:text-sky-600", badge: "bg-sky-50 text-sky-700 border-sky-100" },
   { border: "hover:border-pink-500 hover:shadow-pink-50", iconBg: "bg-pink-50", iconText: "text-pink-600", title: "group-hover:text-pink-600", badge: "bg-pink-50 text-pink-700 border-pink-100" },
   { border: "hover:border-violet-500 hover:shadow-violet-50", iconBg: "bg-violet-50", iconText: "text-violet-600", title: "group-hover:text-violet-600", badge: "bg-violet-50 text-violet-700 border-violet-100" },
-  { border: "hover:border-red-500 hover:shadow-red-50", iconBg: "bg-red-50", iconText: "text-red-600", title: "group-hover:text-red-600", badge: "bg-red-50 text-red-700 border-red-100" },
+  { border: "hover:border-teal-500 hover:shadow-teal-50", iconBg: "bg-teal-50", iconText: "text-teal-600", title: "group-hover:text-teal-600", badge: "bg-teal-50 text-teal-800 border-teal-100" },
 ];
 
 const ICON_BY_CATEGORY: Record<ProjectCategory, LucideIcon> = {
@@ -68,7 +68,7 @@ export function ProjectCard({
 
   return (
     <article
-      className={`group flex flex-col rounded-[2rem] border-2 border-gray-100 bg-white p-8 transition-all duration-300 dark:border-neutral-800 dark:bg-neutral-900 ${a.border} hover:shadow-2xl`}
+      className={`group flex flex-col rounded-[2rem] border-2 border-gray-100 bg-white p-6 transition-all duration-300 dark:border-neutral-800 dark:bg-neutral-900 sm:p-8 ${a.border} hover:shadow-2xl`}
     >
       <div className="mb-6 flex items-start justify-between">
         <div
@@ -113,7 +113,7 @@ export function ProjectCard({
         </div>
       </div>
       <Link href={`/projects/${project.slug}`}>
-        <h3 className={`font-display mb-3 text-2xl font-bold text-gray-900 transition-colors dark:text-white ${a.title}`}>
+        <h3 className={`font-display mb-3 text-xl font-bold text-gray-900 transition-colors dark:text-white sm:text-2xl ${a.title}`}>
           {project.name}
         </h3>
       </Link>

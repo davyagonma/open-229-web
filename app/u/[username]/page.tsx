@@ -30,7 +30,7 @@ export default async function ProfilePage({ params }: Props) {
     projects_contributed.reduce((a, p) => a + p.stars_count, 0);
 
   return (
-    <div className="mx-auto max-w-5xl px-6 py-16">
+    <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
       <header className="mb-12 flex flex-col gap-8 border-b border-gray-100 pb-12 md:flex-row md:items-start">
         <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-3xl bg-gray-200">
           <Image
@@ -46,10 +46,10 @@ export default async function ProfilePage({ params }: Props) {
           />
         </div>
         <div>
-          <h1 className="font-display text-4xl font-black text-gray-900">
+          <h1 className="font-display text-balance text-3xl font-black text-gray-900 dark:text-white sm:text-4xl">
             {profile.display_name ?? profile.username}
           </h1>
-          <p className="mt-1 text-lg text-indigo-600">@{profile.username}</p>
+          <p className="mt-1 text-lg text-green-700 dark:text-green-400">@{profile.username}</p>
           {profile.location ? (
             <p className="mt-2 flex items-center gap-2 text-gray-600">
               <MapPin className="h-4 w-4" />
@@ -124,7 +124,7 @@ export default async function ProfilePage({ params }: Props) {
                 <div>
                   <Link
                     href={`/projects/${p.slug}`}
-                    className="font-display text-lg font-bold text-gray-900 hover:text-indigo-600"
+                    className="font-display text-lg font-bold text-gray-900 hover:text-green-700 dark:text-white dark:hover:text-green-400"
                   >
                     {p.name}
                   </Link>
@@ -146,7 +146,7 @@ export default async function ProfilePage({ params }: Props) {
       <p className="mt-12 text-center">
         <Link
           href="/add"
-          className="font-semibold text-indigo-600 hover:underline"
+          className="font-semibold text-green-700 hover:underline dark:text-green-400"
         >
           Proposer un projet →
         </Link>

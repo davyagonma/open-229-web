@@ -7,12 +7,12 @@ export async function SiteFooter() {
   const { user } = await getServerAuth();
 
   return (
-    <footer className="border-t border-gray-100 bg-white py-16 transition-colors dark:border-neutral-800 dark:bg-neutral-950">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-16 grid grid-cols-1 gap-12 md:grid-cols-4">
+    <footer className="border-t border-gray-100 bg-white py-12 transition-colors dark:border-neutral-800 dark:bg-neutral-950 sm:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="mb-12 grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-12">
           <div>
             <Link href="/" className="mb-6 flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-red-600">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-600">
                 <span className="text-sm font-bold leading-none text-white">229</span>
               </div>
               <span className="font-display text-xl font-bold tracking-tighter text-gray-900 dark:text-white">
@@ -54,7 +54,7 @@ export async function SiteFooter() {
               <li>
                 <Link
                   href="/search"
-                  className="text-sm text-gray-500 transition-colors hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400"
+                  className="text-sm text-gray-500 transition-colors hover:text-green-700 dark:text-neutral-400 dark:hover:text-green-400"
                 >
                   Browse Projects
                 </Link>
@@ -62,7 +62,7 @@ export async function SiteFooter() {
               <li>
                 <Link
                   href="/add"
-                  className="text-sm text-gray-500 transition-colors hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400"
+                  className="text-sm text-gray-500 transition-colors hover:text-green-700 dark:text-neutral-400 dark:hover:text-green-400"
                 >
                   Add a project
                 </Link>
@@ -78,7 +78,7 @@ export async function SiteFooter() {
                 <li>
                   <Link
                     href="/join"
-                    className="text-sm text-gray-500 transition-colors hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400"
+                    className="text-sm text-gray-500 transition-colors hover:text-green-700 dark:text-neutral-400 dark:hover:text-green-400"
                   >
                     Join
                   </Link>
@@ -87,7 +87,7 @@ export async function SiteFooter() {
               <li>
                 <a
                   href="https://github.com"
-                  className="text-sm text-gray-500 transition-colors hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400"
+                  className="text-sm text-gray-500 transition-colors hover:text-green-700 dark:text-neutral-400 dark:hover:text-green-400"
                 >
                   GitHub org
                 </a>

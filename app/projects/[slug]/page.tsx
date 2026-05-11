@@ -33,7 +33,7 @@ export default async function ProjectDetailPage({ params }: Props) {
   const { project, submitter, contributors, similar } = data;
 
   return (
-    <article className="mx-auto max-w-4xl px-6 py-16">
+    <article className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16">
       <header className="mb-10">
         <div className="mb-4 flex flex-wrap items-center gap-3 text-sm text-gray-500">
           <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">
@@ -44,7 +44,7 @@ export default async function ProjectDetailPage({ params }: Props) {
           ) : null}
           {project.license ? <span>{project.license}</span> : null}
         </div>
-        <h1 className="font-display text-4xl font-black text-gray-900 md:text-5xl">
+        <h1 className="font-display text-balance break-words text-3xl font-black text-gray-900 md:text-5xl dark:text-white">
           {project.name}
         </h1>
         <p className="mt-4 text-xl text-gray-600">{project.short_description}</p>
@@ -104,7 +104,7 @@ export default async function ProjectDetailPage({ params }: Props) {
           Submitted by{" "}
           <Link
             href={`/u/${submitter.username}`}
-            className="font-semibold text-indigo-600 hover:underline"
+            className="font-semibold text-green-700 hover:underline dark:text-green-400"
           >
             @{submitter.username}
           </Link>
@@ -154,7 +154,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                   {c.username ? (
                     <Link
                       href={`/u/${c.username}`}
-                      className="text-indigo-600 hover:underline"
+                      className="text-green-700 hover:underline dark:text-green-400"
                     >
                       {c.display_name}
                     </Link>

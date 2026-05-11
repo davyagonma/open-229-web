@@ -37,8 +37,8 @@ export function ExploreSection() {
   ];
 
   return (
-    <section id="explore" className="border-y border-gray-100 bg-white py-12 dark:border-neutral-800 dark:bg-neutral-900">
-      <div className="mx-auto max-w-7xl px-6">
+    <section id="explore" className="border-y border-gray-100 bg-white py-10 dark:border-neutral-800 dark:bg-neutral-900 sm:py-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <form
           onSubmit={submitSearch}
           className="flex flex-col justify-between gap-8 lg:flex-row lg:items-center"
@@ -74,7 +74,7 @@ export function ExploreSection() {
             ))}
             <Link
               href="/search"
-              className="text-sm font-semibold text-indigo-600 hover:underline dark:text-indigo-400"
+              className="text-sm font-semibold text-green-700 hover:underline dark:text-green-400"
             >
               All filters →
             </Link>

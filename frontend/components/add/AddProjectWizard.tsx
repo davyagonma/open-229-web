@@ -189,7 +189,7 @@ export function AddProjectWizard() {
         </p>
         <Link
           href="/signin"
-          className="mt-4 inline-block font-bold text-indigo-600 underline"
+          className="mt-4 inline-block font-bold text-green-700 underline dark:text-green-400"
         >
           Se connecter
         </Link>
@@ -201,17 +201,19 @@ export function AddProjectWizard() {
 
   return (
     <div className="mt-10">
-      <div className="mb-8 flex items-center justify-between gap-4">
-        <p className="text-sm font-semibold text-gray-600">
+      <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+        <p className="text-sm font-semibold text-gray-600 dark:text-neutral-400">
           Étape {step} / {STEPS}
         </p>
-        <div className="h-2 flex-1 max-w-md overflow-hidden rounded-full bg-gray-200">
+        <div className="order-last h-2 min-h-0 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-neutral-700 sm:order-none sm:flex-1 sm:max-w-md">
           <div
-            className="h-full bg-green-600 transition-all"
+            className="h-full bg-green-600 transition-all dark:bg-green-500"
             style={{ width: `${pct}%` }}
           />
         </div>
-        <span className="text-sm font-bold text-gray-900">{pct}%</span>
+        <span className="text-sm font-bold text-gray-900 dark:text-white sm:text-right">
+          {pct}%
+        </span>
       </div>
 
       <div className="flex gap-1 overflow-x-auto pb-2">
@@ -450,7 +452,7 @@ export function AddProjectWizard() {
           <button
             type="button"
             onClick={addExtraContributor}
-            className="text-sm font-semibold text-indigo-600"
+            className="text-sm font-semibold text-green-700 dark:text-green-400"
           >
             + Contributeur
           </button>

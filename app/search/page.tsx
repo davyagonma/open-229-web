@@ -48,9 +48,9 @@ export default async function SearchPage({
   const totalPages = Math.max(1, Math.ceil(total / 12));
 
   return (
-    <div className="mx-auto max-w-7xl px-6 py-16">
+    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
       <div className="mb-10">
-        <h1 className="font-display text-4xl font-black text-gray-900 md:text-5xl">
+        <h1 className="font-display text-balance text-3xl font-black text-gray-900 sm:text-4xl md:text-5xl">
           Search projects
         </h1>
         <p className="mt-2 text-gray-600">
@@ -110,7 +110,7 @@ export default async function SearchPage({
       {rows.length === 0 ? (
         <p className="mt-12 text-center text-gray-500">
           Aucun projet. Essayez d’autres filtres ou{" "}
-          <Link href="/add" className="text-indigo-600 underline">
+          <Link href="/add" className="font-semibold text-green-700 underline dark:text-green-400">
             proposez-en un
           </Link>
           .

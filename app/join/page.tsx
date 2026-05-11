@@ -49,14 +49,14 @@ export default function JoinPage() {
   }
 
   return (
-    <div className="mx-auto max-w-lg px-6 py-20">
-      <p className="text-center text-sm font-bold uppercase tracking-wider text-gray-500">
+    <div className="mx-auto max-w-lg px-4 py-16 sm:px-6 sm:py-20">
+      <p className="text-center text-sm font-bold uppercase tracking-wider text-gray-500 dark:text-neutral-400">
         Built for Developers by Developers
       </p>
-      <h1 className="font-display mt-4 text-center text-4xl font-black text-gray-900 md:text-5xl">
+      <h1 className="font-display mt-4 text-center text-balance text-3xl font-black text-gray-900 dark:text-white md:text-5xl">
         REJOIGNEZ OPEN-229
       </h1>
-      <p className="mt-4 text-center text-gray-600">
+      <p className="mt-4 text-center text-gray-600 dark:text-neutral-400">
         Cartographions ensemble l’open source du Bénin.
       </p>
 
@@ -126,7 +126,7 @@ export default function JoinPage() {
 
       <p className="mt-8 text-center text-sm text-gray-600">
         Déjà inscrit ?{" "}
-        <Link href="/signin" className="font-semibold text-indigo-600">
+        <Link href="/signin" className="font-semibold text-green-700 dark:text-green-400">
           Se connecter
         </Link>
       </p>

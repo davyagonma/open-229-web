@@ -20,10 +20,10 @@ const steps = [
 
 export function LandingHow() {
   return (
-    <section className="px-6 py-20">
+    <section className="px-4 py-16 sm:px-6 sm:py-20">
       <div className="mx-auto max-w-7xl">
         <div className="mb-14 text-center">
-          <h2 className="font-display text-3xl font-black text-gray-900 dark:text-white md:text-4xl">
+          <h2 className="font-display text-balance text-2xl font-black text-gray-900 dark:text-white sm:text-3xl md:text-4xl">
             Comment ça marche ?
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-gray-600 dark:text-neutral-400">
@@ -34,7 +34,7 @@ export function LandingHow() {
           {steps.map((s) => (
             <li
               key={s.n}
-              className="relative overflow-hidden rounded-[2rem] border-2 border-dashed border-gray-200 bg-white p-8 dark:border-neutral-700 dark:bg-neutral-900"
+              className="relative overflow-hidden rounded-[2rem] border-2 border-dashed border-gray-200 bg-white p-6 dark:border-neutral-700 dark:bg-neutral-900 sm:p-8"
             >
               <span className="font-display text-5xl font-black text-gray-100 dark:text-neutral-800">
                 {s.n}
@@ -50,7 +50,7 @@ export function LandingHow() {
         </ol>
         <p className="mt-10 text-center text-sm text-gray-500 dark:text-neutral-500">
           Vous préférez lire le code ?{" "}
-          <Link href="/search" className="font-semibold text-indigo-600 hover:underline dark:text-indigo-400">
+          <Link href="/search" className="font-semibold text-green-700 hover:underline dark:text-green-400">
             Parcourez le catalogue
           </Link>{" "}
           ou ouvrez une discussion sur GitHub.
